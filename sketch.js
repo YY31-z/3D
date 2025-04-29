@@ -26,19 +26,19 @@ function setup() {
 //
 
 function draw() {
-  background("blue");
+  background("black");
   orbitControl();
 
   let angle = 360 / columns;
   let diameter = textSize();
 
-  fill("white");
+  fill("pink");
 
   rotateY(-frameCount);
   for (let i = 0; i < columns; i++) {
     push();
     rotateY(angle * i);
-    translate(diameter, 0, 0);
+    translate(diameter, 0, -height / 2);
     for (let j = 0; j < rows; j++) {
       const a = cos(frameCount * 5 + j * 20);
       const m = map(a, -1, 1, 0, textSize());
