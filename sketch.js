@@ -1,6 +1,6 @@
 let columns = 10;
 let rows = 10;
-let testo = "@^#";
+let testo = "land";
 //
 
 let font;
@@ -38,7 +38,7 @@ function draw() {
   for (let i = 0; i < columns; i++) {
     push();
     rotateY(angle * i);
-    translate(diameter, 0, -height / 2);
+    translate(diameter, 0, height / 2);
     for (let j = 0; j < rows; j++) {
       const a = cos(frameCount * 5 + j * 20);
       const m = map(a, -1, 1, 0, textSize());
