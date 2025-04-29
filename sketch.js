@@ -1,6 +1,6 @@
 let columns = 10;
 let rows = 10;
-let testo = "&^#";
+let testo = "@^#";
 //
 
 let font;
